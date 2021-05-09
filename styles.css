@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#background{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.divBackground{
+    position: relative;
+    background-color: #001d4a;
+    width: 100%;
+    height: 100vh;
+}
+.msgBox{
+    box-sizing: border-box;
+    padding: 30px 20px;
+    border-radius: 5px;
+    position: absolute;
+    /* font-family: 'Old Standard TT', serif; */
+    text-align: center;
+    top: 20%;
+    left: 9%;
+    background-color: #fff;
+    color: #001d4a;
+    width: 35%;
+    height: 60%;
+}
+.messageHeader{
+    font-size:25px ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 5px 10px 20px;
+}
+.imageRight{
+    /* padding: 30px 20px; */
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    right: 9%;
+    width: 35%;
+    height: 60%;
+}
+
+@media (max-width:1200px){
+    .imageRight{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        width: 30%;
+        height: 60%;
+    
+}
+.msgBox{
+   
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 5%;
+    background-color: #fff;
+    color: #001d4a;
+    width: 55%;
+    height: 60%;
+    
+}
+}
+
+@media (max-width:700px){
+    .imageRight{
+        display:none
+        
+    }
+    .msgBox{
+       
+        position: absolute;
+        text-align: center;
+        top: 20%;
+        left: 5%;
+        background-color: #fff;
+        color: #001d4a;
+        width: 90%;
+        height: auto;
+        
+    }
+}
+#message{
+    height: 40px;
+    width: 80%;
+    border: 1px solid #5d79a3;
+    color: #001d4a;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    outline: none;
+    padding: 0 5px;
+    font-family: serif; 
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#submit{
+    background-color:#5d79a3 ;
+    color:white;
+    outline: none;
+    font-family: sans-serif;
+    font-size:17px;
+    font-weight: 500;
+    padding: 7px 10px;
+    border-style: none;
+    margin-bottom: 15px;
+    cursor:pointer;
+}
+#submit:hover{
+    background-color: #001d4a;
+}
+#displayMessage{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.lastMessage{
+    font-family: sans-serif;
+    font-size:20px;
+    font-weight: 500;
+    margin:30px 0 10px;
+
+}
+#displayMessage{
+    font-style: italic;
+    font-weight: bold;
+ 
+}
+#emptyMessage{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-size:20px;
+    display: none;
+}
